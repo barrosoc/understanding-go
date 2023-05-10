@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
 	quantity := 4
@@ -11,4 +14,5 @@ func main() {
 	fmt.Println("has ordered", quantity, "sheets")
 	fmt.Println("each with area of")
 	fmt.Println(length*width, "square meters")
+	fmt.Println(reflect.TypeOf(length))
 }
